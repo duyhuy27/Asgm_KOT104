@@ -1,4 +1,4 @@
-package com.dev.asgm_kot104
+package com.dev.asgm_kot104.ui.theme.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

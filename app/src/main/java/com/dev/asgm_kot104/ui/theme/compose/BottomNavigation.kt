@@ -1,4 +1,4 @@
-package com.dev.asgm_kot104
+package com.dev.asgm_kot104.ui.theme.compose
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
@@ -9,7 +9,6 @@ import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -31,7 +30,7 @@ fun BottomNavigationBar() {
         Row ( modifier = Modifier
             .padding()
             .background(MaterialTheme.colorScheme.inverseOnSurface)) {
-            items.forEachIndexed() {index, item ->
+            items.forEachIndexed() { index, item ->
                 NavigationBarItem(selected = index == 0, onClick = { /*TODO*/ }, icon = { Icon(
                     imageVector = item.icon,
                     contentDescription = item.title,
